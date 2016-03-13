@@ -8,7 +8,7 @@
   "main": "index.js",
   "scripts": {
     "build": "browserify index.js > bundle.js",
-    "publish": "npm build && echo \"/ipfs/$(ipfs add -qw index.html bundle.js | tail -n 1)\""
+    "publish": "npm run build && echo \"/ipfs/$(ipfs add -qw index.html bundle.js | tail -n 1)\""
   },
   "dependencies": {
     "signalhub": "^4.3.2",
