@@ -1,0 +1,16 @@
+{
+  "name": "splash-page",
+  "description": "ip-wiki-splash-page",
+  "version": "0.0.0",
+  "repository": {
+    "url": "git://github.com/noffle/splash-page.git"
+  },
+  "main": "index.js",
+  "scripts": {
+    "test": "tape test/*.js"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "tape": "*"
+  }
+}
