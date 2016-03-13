@@ -1,16 +1,17 @@
 {
-  "name": "splash-page",
-  "description": "ip-wiki-splash-page",
+  "name": "ip-wiki-splash-page",
+  "description": "splash page for accessing the interplanetary wiki",
   "version": "0.0.0",
   "repository": {
-    "url": "git://github.com/noffle/splash-page.git"
+    "url": "git://github.com/noffle/ip-wiki-splash-page.git"
   },
   "main": "index.js",
   "scripts": {
-    "test": "tape test/*.js"
+    "build": "browserify index.js > bundle.js",
+    "publish": "npm build && echo \"/ipfs/$(ipfs add -qw index.html bundle.js | tail -n 1)\""
   },
-  "dependencies": {},
-  "devDependencies": {
-    "tape": "*"
+  "dependencies": {
+    "signalhub": "^4.3.2",
+    "webrtc-swarm": "^2.4.0"
   }
 }
