@@ -1,9 +1,9 @@
 {
-  "name": "ip-wiki-splash-page",
-  "description": "splash page for accessing the interplanetary wiki",
+  "name": "ip-wiki-gateway",
+  "description": "gateway page for accessing the interplanetary wiki",
   "version": "0.0.0",
   "repository": {
-    "url": "git://github.com/noffle/ip-wiki-splash-page.git"
+    "url": "git://github.com/noffle/ip-wiki-gateway.git"
   },
   "main": "index.js",
   "scripts": {
